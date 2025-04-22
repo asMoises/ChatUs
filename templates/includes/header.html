@@ -23,7 +23,7 @@
                         <ul class="hoverlist [&>li>a]:justify-end">
                             <li><a href="{% url 'profile' %}">Perfil</a></li>
                             <li><a href="{% url 'profile-edit' %}">Editar Perfil</a></li>
-			    <li><a href="">Settings</a></li>
+			                <li><a href="{% url 'profile-settings' %}">Settings</a></li>
                             <li><a href="{% url 'account_logout' %}">Sair</a></li>
                         </ul>
                     </div>
@@ -31,7 +31,7 @@
                 
                 {% else %}
 		        <li><a href="{% url 'account_login' %}">Entrar</a></li>
-                <li><a href="">Cadastre-se!</a></li>
+                <li><a href="{% url 'account_signup' %}?next={% url 'profile-onboarding'%}">Cadastre-se!</a></li>
                 {% endif %}
             </ul>
         </nav>
