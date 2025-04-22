@@ -1,0 +1,15 @@
+
+{% extends 'layouts/box.html' %}
+
+{% block content %}
+
+<h1>Apagar Conta</h1>
+<p>Você tem certeza que deseja apagar esta conta?</p>
+
+<form method='POST'>
+    {% csrf_token %}
+    <button type="submit" class="button-red mt-6">Sim, Eu quero apagar minha conta</button>
+    <a class="button button-gray ml-1" href="{% url 'profile-settings' %}">Cancelar</a>
+</form>
+
+{% endblock %}
