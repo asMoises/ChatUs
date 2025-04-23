@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     # Apps
     'a_home',
     'a_users', 
+    'a_rtchat',
 ]
 
 MIDDLEWARE = [
