@@ -1,0 +1,27 @@
+# Banco de dados
+db.sqlite3
+
+# Pycache e arquivos compilados
+__pycache__/
+*.py[cod]
+
+# Migrações (opcional, se for trabalhar sozinho)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Ambiente virtual
+venv/
+env/
+vCars/
+
+# Configs do editor
+.vscode/
+.idea/
+*.swp
+
+# Arquivos de mídia e estáticos gerados
+media/
+staticfiles/
+
+# Logs
+*.log
